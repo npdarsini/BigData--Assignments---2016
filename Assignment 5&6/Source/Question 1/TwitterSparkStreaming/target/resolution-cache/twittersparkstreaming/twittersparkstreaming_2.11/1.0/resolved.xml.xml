@@ -4,7 +4,7 @@
 		module="twittersparkstreaming_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160311182004"
+		publication="20160311200503"
 	>
 		<description>
 		TwitterSparkStreaming

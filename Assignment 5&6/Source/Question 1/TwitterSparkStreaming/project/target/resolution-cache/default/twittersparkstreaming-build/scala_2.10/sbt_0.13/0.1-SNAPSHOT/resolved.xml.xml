@@ -4,7 +4,7 @@
 		module="twittersparkstreaming-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160304000924"
+		publication="20160311200444"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>

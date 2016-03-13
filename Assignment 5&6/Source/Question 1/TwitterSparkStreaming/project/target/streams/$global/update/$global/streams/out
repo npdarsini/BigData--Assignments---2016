@@ -1870,7 +1870,7 @@
 [debug] 	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar
 [debug] 	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar
 [debug] 	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar
-[debug] :: resolution report :: resolve 8441ms :: artifacts dl 929ms
+[debug] :: resolution report :: resolve 3383ms :: artifacts dl 71ms
 [debug] 	report for default#twittersparkstreaming-build;0.1-SNAPSHOT compile produced in C:\Users\npdar\OneDrive\Documents\GitHub\BigData--Assignments---2016\Assignment 5&6\Source\Question 1\TwitterSparkStreaming\project\target\resolution-cache\reports\default-twittersparkstreaming-build-compile.xml
 [debug] 	report for default#twittersparkstreaming-build;0.1-SNAPSHOT runtime produced in C:\Users\npdar\OneDrive\Documents\GitHub\BigData--Assignments---2016\Assignment 5&6\Source\Question 1\TwitterSparkStreaming\project\target\resolution-cache\reports\default-twittersparkstreaming-build-runtime.xml
 [debug] 	report for default#twittersparkstreaming-build;0.1-SNAPSHOT test produced in C:\Users\npdar\OneDrive\Documents\GitHub\BigData--Assignments---2016\Assignment 5&6\Source\Question 1\TwitterSparkStreaming\project\target\resolution-cache\reports\default-twittersparkstreaming-build-test.xml
@@ -1884,5 +1884,5 @@
 [debug] 	report for default#twittersparkstreaming-build;0.1-SNAPSHOT docs produced in C:\Users\npdar\OneDrive\Documents\GitHub\BigData--Assignments---2016\Assignment 5&6\Source\Question 1\TwitterSparkStreaming\project\target\resolution-cache\reports\default-twittersparkstreaming-build-docs.xml
 [debug] 	report for default#twittersparkstreaming-build;0.1-SNAPSHOT pom produced in C:\Users\npdar\OneDrive\Documents\GitHub\BigData--Assignments---2016\Assignment 5&6\Source\Question 1\TwitterSparkStreaming\project\target\resolution-cache\reports\default-twittersparkstreaming-build-pom.xml
 [debug] 	report for default#twittersparkstreaming-build;0.1-SNAPSHOT scala-tool produced in C:\Users\npdar\OneDrive\Documents\GitHub\BigData--Assignments---2016\Assignment 5&6\Source\Question 1\TwitterSparkStreaming\project\target\resolution-cache\reports\default-twittersparkstreaming-build-scala-tool.xml
-[debug] 	resolve done (8441ms resolve - 929ms download)
+[debug] 	resolve done (3383ms resolve - 71ms download)
 [info] Done updating.
