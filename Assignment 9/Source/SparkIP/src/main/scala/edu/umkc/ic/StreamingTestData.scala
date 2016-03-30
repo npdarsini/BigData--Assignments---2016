@@ -23,7 +23,7 @@ object StreamingTestData {
 
   def main(args: Array[String]) {
 
-    val tags = List("accordion", "airplanes", "anchor", "ant", "barrel", "bass", "beaver", "binocular", "bonsai")
+    val tags = List("aeroplane", "cars", "bike", "motorcycle", "bus", "cruise", "train")
     val server = new ServerSocket(1234)
     println(InetAddress.getLocalHost.getHostAddress)
     while (true) {

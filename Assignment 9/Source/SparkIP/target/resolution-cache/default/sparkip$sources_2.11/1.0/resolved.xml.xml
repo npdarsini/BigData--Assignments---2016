@@ -4,7 +4,7 @@
 		module="sparkip$sources_2.11"
 		revision="1.0"
 		status="integration"
-		publication="20160316003749"
+		publication="20160330145449"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>

@@ -25,7 +25,7 @@ import scala.collection.mutable
 object IPApp {
   val featureVectorsCluster = new mutable.MutableList[String]
 
-  val IMAGE_CATEGORIES = List("rice", "tempura", "toast", "bibimap", "sushi", "spaghetti", "sausage", "oden", "omelet", "jiaozi")
+  val IMAGE_CATEGORIES = List( "cars", "bike", "motorcycle", "bus", "cruise", "train")
   //val IMAGE_CATEGORIES = List("accordion", "airplanes", "anchor", "ant", "barrel", "bass", "beaver", "binocular", "bonsai")
 
   /**
@@ -234,7 +234,7 @@ object IPApp {
 
     //    testImageClassification(sc)
 
-    val ip = InetAddress.getByName("192.168.1.138").getHostName
+    val ip = InetAddress.getByName("192.168.6.1").getHostName
 
     val lines = ssc.socketTextStream(ip, 1234)
 

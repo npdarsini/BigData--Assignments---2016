@@ -11,7 +11,7 @@ object RecommendationSystem {
   def main(args: Array[String]) {
     System.setProperty("hadoop.home.dir", "F:\\winutils")
     val conf = new SparkConf().setMaster("local[*]").setAppName("SimpleRecommendation")
-      .set("spark.executor.memory", "2g")
+      .set("spark.executor.memory", "4g")
 
     val sc = new SparkContext(conf)
 
@@ -22,7 +22,7 @@ object RecommendationSystem {
       userMapping += (users(i - 1) -> i)
     }
     val USERID = sc.broadcast(userMapping)
-    val tags = List("rice", "tempura", "toast", "bibimap", "sushi", "spaghetti", "sausage", "oden", "omelet", "jiaozi")
+    val tags = List("aeroplane", "cars", "bike", "motorcycle", "bus", "cruise", "train")
     var tagId: Map[Int, String] = Map()
     var count: Int = 1
 
@@ -33,7 +33,7 @@ object RecommendationSystem {
 
     val CATEGORYID = sc.broadcast()
     // load personal ratings
-    val recoData = sc.textFile("instadata2/recommendation.txt")
+    val recoData = sc.textFile("instadata3/recommendation.txt")
     val ratings = recoData.map(f => {
       //username;caption;tag;tagId;link
       val d = f.split(";")
@@ -64,11 +64,12 @@ object RecommendationSystem {
     val recommendations = model.predict(myRatedMovieIds.map((1, _))).collect()
 
     var i = 1
-    println("Movies recommended for you:")
+    println("Transport Mode recommended for you:")
     recommendations.foreach { r =>
       println(r)
       println("%2d".format(i) + ": " + tagId(r.product))
       i += 1
+      SocketClient.sendCommandToRobot( "Transport Mode recommended for you:" + "User Id:1363512652" + "\n" +"%2d".format(i) + ": " + tagId(r.product) + "\n")
     }
 
     // clean up

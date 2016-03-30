@@ -9,7 +9,7 @@ object RecomendationDataPreparation {
 
   def main(args: Array[String]) {
 
-    val recoData=Source.fromFile("instadata2/recommendation.txt")
+    val recoData=Source.fromFile("instadata3/recommendation.txt")
 
   }
 

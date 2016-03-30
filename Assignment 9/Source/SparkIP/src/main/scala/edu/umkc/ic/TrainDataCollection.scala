@@ -27,7 +27,7 @@ object TrainDataCollection {
 
     //val tags = List("rice", "tempura", "toast", "bibimap", "sushi", "spaghetti", "sausage", "oden", "omelet", "jiaozi")
     // val tags = List("sushi")
-    val tags = List("accordion", "airplanes", "anchor", "ant", "barrel", "bass", "beaver", "binocular", "bonsai")
+    val tags = List("aeroplane", "cars", "bike", "motorcycle", "bus", "cruise", "train")
     var tagId: Map[String, Int] = Map()
     var count: Int = 1
     fileR.println("username;caption;tag;tagId;link")

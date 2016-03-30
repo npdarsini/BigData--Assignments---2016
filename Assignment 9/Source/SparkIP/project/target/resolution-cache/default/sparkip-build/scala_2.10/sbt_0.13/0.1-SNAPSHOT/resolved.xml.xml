@@ -4,7 +4,7 @@
 		module="sparkip-build"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160314174949"
+		publication="20160328130126"
 		e:sbtVersion="0.13" e:scalaVersion="2.10"
 	>
 		<description>
